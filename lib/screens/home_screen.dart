@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Color _backgroundColor = Colors.grey;
+  Color _screenBackgroundColor = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () => setState(() {
-          _backgroundColor = ColorSwitcher.getNewRgbColor();
+          _screenBackgroundColor = ColorSwitcher.getNewRgbColor();
         }),
         child: const Center(
           child: Text(
@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      backgroundColor: _backgroundColor,
+      backgroundColor: _screenBackgroundColor,
     );
   }
 }
