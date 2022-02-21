@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:test_task/screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Main());
 }
 
 /// Class for running the application
-class MyApp extends StatelessWidget {
+class Main extends StatelessWidget {
   /// MyApp basic constructor
-  const MyApp({Key? key}) : super(key: key);
+  const Main({Key? key}) : super(key: key);
 
   // This widget is the root of application.
   @override
